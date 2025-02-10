@@ -1,0 +1,116 @@
+/* SignupPage.css */
+
+.main {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: hsla(215, 100%, 68%, 0.833);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .signup-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .signup-card {
+    background: hsl(215, 100%, 91%);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  .signup-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .signup-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .signup-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #666;
+  }
+  
+  .signup-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  .signup-form input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 4px rgba(52, 152, 219, 0.5);
+  }
+  
+  .signup-button {
+    width: 100%;
+    padding: 12px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-button:hover {
+    background: #2980b9;
+  }
+    
+  .login-redirect {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .login-redirect span {
+    color: #7f7fd5;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+    margin: 5px;
+  }
+  
+  .login-redirect-link:hover {
+    color: #7f7fd5f1;
+  }
+
+  @media screen and (max-width: 480px) {
+    .signup-card {
+      padding: 20px;
+    }
+  
+    .signup-title {
+      font-size: 1.5rem;
+    }
+  
+    .signup-button {
+      font-size: 1rem;
+    }
+  }
+  

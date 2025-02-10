@@ -1,0 +1,92 @@
+/* Home Page Styling */
+.home-container {
+  padding: 20px;
+  max-width: 100vw;
+  min-height: 100vh;;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #0A0A0A; /* Dark background */
+  color: #E0E0E0; /* Light gray text for contrast */
+}
+
+.home-container h1 {
+  font-size: 2.5rem;
+  color: #F4F4F4; /* Slightly off-white title */
+  margin-bottom: 30px;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.note-card {
+  background-color: #1A1A1A; /* Dark card background */
+  color: #E0E0E0; /* Light text on cards */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.note-title {
+  font-size: 1.8rem;
+  color: #FFFFFF; /* White title for readability */
+  margin-bottom: 15px;
+  word-break: break-word;
+}
+
+.note-content {
+  font-size: 1.1rem;
+  color: #C4C4C4; /* Slightly lighter text for content */
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 140px; /* Control content overflow */
+  word-wrap: break-word;
+}
+
+.no-notes-message {
+  font-size: 1.2rem;
+  color: #999999; /* Subtle gray for no content message */
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: 20px;
+  }
+
+  .notes-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjust columns for smaller screens */
+  }
+
+  .note-card {
+    padding: 15px; /* Slightly smaller padding on smaller screens */
+  }
+
+  .note-title {
+    font-size: 1.5rem;
+  }
+
+  .note-content {
+    font-size: 1rem;
+  }
+}
+
+.note-user-btn{
+  background-color: transparent;
+  color: white;
+  border: none;
+}

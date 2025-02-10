@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    background-color: #1e1e2e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0; /* Adjust padding to fit content */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.outer-first, .outer-second {
+    width: 80vw;
+    background-color: #292a36;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    flex-shrink: 0;
+}
+
+.outer-first {
+    height: 30vh; /* Adjusted to fit within viewport */
+}
+
+.outer-second {
+    height: 40vh; /* Adjusted to fit within viewport */
+}
+
+.outer-first .inner-first {
+    width: 30%;
+    background-color: #3b3b4f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    background-color: #555;
+    border: 3px solid #888;
+}
+
+.outer-first .inner-second {
+    width: 70%;
+    background-color: #4b4e69;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.user-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.user-info p {
+    font-size: 1rem;
+    color: #d1d1d1;
+    margin: 0.2rem 0;
+}
+
+.outer-second .inner-first {
+    width: 65%;
+    background-color: #3b3b4f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+.graph-placeholder {
+    width: 90%;
+    height: 80%;
+    background-color: #555;
+    border-radius: 8px;
+}
+
+.outer-second .inner-second {
+    width: 35%;
+    background-color: #4b4e69;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge {
+    background-color: #555;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}

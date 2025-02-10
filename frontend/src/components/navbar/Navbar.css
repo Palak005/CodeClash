@@ -1,0 +1,85 @@
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0A0A0A; /* Dark background */
+    padding: 15px 30px;
+    color: white; /* White text for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    position: fixed;
+    max-width: 100vw;
+    width: 95%;
+  }
+  
+  .navbar-logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #F4F4F4; /* Slightly off-white for the logo */
+  }
+  
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    margin: 0 15px;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #D1D1D1; /* Light gray for links */
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    background-color: #1A1A1A; /* Slightly lighter dark hover effect */
+    color: #F4F4F4; /* White on hover for better contrast */
+  }
+  
+  .logout-btn,
+  .login-btn {
+    background-color: #E94560; /* Vibrant red for buttons */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .logout-btn:hover,
+  .login-btn:hover {
+    background-color: #D4364E; /* Darker red on hover */
+    transform: translateY(-2px); /* Button lift effect */
+  }
+  
+  .logout-btn:active,
+  .login-btn:active {
+    background-color: #C12C44; /* Even darker red on click */
+    transform: translateY(0); /* Reset lift effect */
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar-links li {
+      margin: 10px 0;
+    }
+  }
+  

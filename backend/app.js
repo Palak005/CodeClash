@@ -5,6 +5,7 @@ import { connectDB } from "./utils/connectDB.js";
 import NotesRouter from "./routes/Notes.routes.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
+import uniRouter from "./routes/University.routes.js";
 
 const app = express();
 dotenv.config();
@@ -22,8 +23,9 @@ app.use(cookieParser());
 
 app.use("/auth", AuthRouter);
 app.use("/notes", NotesRouter);
+app.use("/university", uniRouter);
 
 app.listen(PORT, ()=>{
     connectDB();
     console.log("Server started on Port : ", PORT);
-})
+});
